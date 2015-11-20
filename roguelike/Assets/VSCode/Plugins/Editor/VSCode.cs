@@ -715,10 +715,10 @@ namespace dotBunny.Unity
                 return "";
 
             // Make sure our reference framework is 2.0, still the base for Unity
-            if (content.IndexOf("<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>") != -1)
+            /*if (content.IndexOf("<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>") != -1)
             {
                 content = Regex.Replace(content, "<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>", "<TargetFrameworkVersion>v2.0</TargetFrameworkVersion>");
-            }
+            }*/
 
             string targetPath = "";// "<TargetPath>Temp" + Path.DirectorySeparatorChar + "bin" + Path.DirectorySeparatorChar + "Debug" + Path.DirectorySeparatorChar + "</TargetPath>"; //OutputPath
             string langVersion = "<LangVersion>default</LangVersion>";
