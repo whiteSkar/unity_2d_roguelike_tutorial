@@ -132,7 +132,7 @@ public class Player : MovingObject
         
         if (Input.touchCount > 0)
         {
-            Touch myTouch = Input.touches[0];
+            Touch myTouch = Input.GetTouch(0);
             if (myTouch.phase == TouchPhase.Began)
             {
                 touchOrigin = myTouch.position;
